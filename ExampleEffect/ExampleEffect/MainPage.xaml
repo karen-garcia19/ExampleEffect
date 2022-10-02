@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ExampleEffect"
+             x:Class="ExampleEffect.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to xamarin.Forms!"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand">
+        </Label>
+        <Entry Text="Effect attached to an Entry" >
+            <Entry.Effects>
+                <local:FocusEffect />
+            </Entry.Effects>
+        </Entry>
+    </StackLayout>
+
+</ContentPage>
